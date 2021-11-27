@@ -15,6 +15,7 @@
         <div class="counter"></div>
       </div>
       <button class="start">Mulai</button>
+      <button class="reset">Reset</button>
     </div>
     <script src="jquery.js"></script>
     <script src="odometer.js"></script>
@@ -4618,7 +4619,8 @@
         if (run === false) {
           run = true;
           buttonStart.innerText = "Stop";
-
+          buttonStart.style.background = "#3483c5"
+          buttonStart.style.color = "#fff"
           setInterval(function () {
             if (run == true)
               od.update(Math.floor(100000 + Math.random() * 900000));
@@ -4626,6 +4628,8 @@
         } else {
           run = false;
           buttonStart.innerText = "Start";
+          buttonStart.style.background = "#fff";
+          buttonStart.style.color = "#3483c5"
           od.update(list[i]);
           winner.innerText = data[list[i]].name;
           i + 1 < list.length ? i++ : (i = 0);
