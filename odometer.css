@@ -63,6 +63,8 @@
   .odometer-digit
   .odometer-value.odometer-last-value {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner,
 .odometer.odometer-theme-minimal.odometer-animating-up .odometer-ribbon-inner {
