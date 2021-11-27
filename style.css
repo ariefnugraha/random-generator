@@ -23,14 +23,12 @@ body {
     text-transform: uppercase;
 }
 
-
-
 button {
-    display: block;
+    display: inline-block;
     background: #fff;
     border: none;
     cursor: pointer;
-    padding: 0.625rem 1.25rem;
+    padding: 1rem 1.25rem;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
